@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#foto_perfil
+
+#titulo{
+
+}
+
+#trabalho{
+
+}
+
+
+#componentes_linktree{
+    background-color: blue;
+    padding: 10px;
+
+    display: grid;
+
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    place-items: center;
+    
+}
+
+#botao_curriculo{
+    background-color: white;
+    width: 300px;
+    height: 30px;
+
+    border-radius: 10px;
+}
+
+
+#botao_linkedIn{
+    background-color: white;
+    width: 300px;
+    height: 30px;
+
+    border-radius: 10px;
+}
+
+#botao_email{
+    background-color: white;
+    width: 300px;
+    height: 30px;
+
+    border-radius: 10px;
+}
+
+#botao_github{
+    background-color: white;
+    width: 300px;
+    height: 30px;
+
+    border-radius: 10px;
+}
