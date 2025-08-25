@@ -1,63 +1,119 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte_titulo: "Montserrat", sans-serif;
+    --fonte_titulo_tamanho: 1.2em;
+
+    --fonte_geral: "Montserrat", sans-serif;
+    --fonte_geral_tamanho: 1em;
+}
+
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-#foto_perfil
 
-#titulo{
-
+#foto_perfil img {
+    width: 140px;
+    border-radius: 50%;
 }
 
-#trabalho{
-
-}
-
-
-#componentes_linktree{
-    background-color: blue;
-    padding: 10px;
-
+#titulo {
+    padding-top: 10px;
+    color: white;
+    font-family: var(--fonte_titulo);
+    font-size: var(--fonte_geral);
     display: grid;
+}
 
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+#trabalho {
+    color: white;
+    display: grid;
+    place-items: start center;
+    font-family: var(--fonte_geral);
+    font-size: var(--fonte_geral_tamanho);
+}
+
+main {
+    display: grid;
     place-items: center;
+    height: 100vh;
+    background: linear-gradient(75deg, #2d6f9b, #2b4c85);
+}
+
+#componentes_linktree {
+    padding: 10px;
+    display: grid;
+    color: white;
     
+    grid-template-rows: 1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.7fr;
+    place-items: start center;
+    height: 500px;
+
+    font-family: var(--fonte_geral);
+    font-size: var(--fonte_geral_tamanho);
 }
 
-#botao_curriculo{
+#botao_curriculo {
     background-color: white;
-    width: 300px;
-    height: 30px;
-
+    width: 200px;
+    
+    padding: 10px;
     border-radius: 10px;
+    border: none;
 }
 
-
-#botao_linkedIn{
-    background-color: white;
-    width: 300px;
-    height: 30px;
-
-    border-radius: 10px;
+#botao_curriculo a{
+    text-decoration: none;
+    color: black;
 }
 
-#botao_email{
+#botao_linkedIn {
     background-color: white;
-    width: 300px;
-    height: 30px;
+    padding: 10px;
+    width: 200px;
 
     border-radius: 10px;
+    border: none;
 }
 
-#botao_github{
-    background-color: white;
-    width: 300px;
-    height: 30px;
+#botao_linkedIn a{
+    text-decoration: none;
+    color: black;
+}
 
+#botao_email {
+    background-color: white;
+    padding: 10px;
+    width: 200px;
     border-radius: 10px;
+    border: none;
+}
+
+#botao_email a {
+    text-decoration: none;
+    color: black;
+}
+
+#botao_github {
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#botao_github a {
+    text-decoration: none;
+    color: black;
+}
+
+.botao:hover {
+    background: linear-gradient(75deg, #2d6f9b, #41a1b3);
+}
+
+#botao {
+    cursor: pointer;
 }
